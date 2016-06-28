@@ -1,0 +1,134 @@
+<?xml version='1.0' encoding='utf-8'?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.flower.grocery"
+    android:versionCode="1"
+    android:versionName="1.0.0">
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="21" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:persistent="true"
+        android:supportsRtl="true">
+
+
+        <activity
+            android:name=".app.base.MainActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait">
+            <intent-filter android:label="@string/launcher_name">
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="sfht" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="fengqu" />
+            </intent-filter>
+            <!-- growing IO scheme -->
+            <intent-filter>
+                <data android:scheme="growing.5af45214254fe4b0" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>
+
+
+        <!--<activity-->
+        <!--android:name=".app.base.WebActivity"-->
+        <!--android:configChanges="keyboardHidden|orientation|screenSize"-->
+        <!--android:hardwareAccelerated="false"-->
+        <!--android:screenOrientation="portrait"-->
+        <!--android:theme="@style/NormalAppTheme" />-->
+        <!--<activity-->
+            <!--android:name=".app.base.NativeActivity"-->
+            <!--android:configChanges="keyboardHidden|orientation|screenSize"-->
+            <!--android:hardwareAccelerated="true"-->
+            <!--android:screenOrientation="portrait"-->
+            <!--android:theme="@style/NormalAppTheme" />-->
+
+        <!-- glide 图片加载模式需要-->
+        <meta-data
+            android:name="com.sfht.common.utils.ARGB888GlideModule"
+            android:value="GlideModule" />
+
+
+        <!-- 风控 您的合作方标识 -->
+        <meta-data
+            android:name="PARTNER_CODE"
+            android:value="sfht" />
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="1d9ae65023c1a37573756a436dee2c84" />
+        <meta-data
+            android:name="JPUSH_CHANNEL"
+            android:value="developer-default" />
+        <meta-data
+            android:name="JPUSH_APPKEY"
+            android:value="539687da0434cb62b45e1bd6" />
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="551defaffd98c5c7920009bf" />
+        <meta-data
+            android:name="TUSDK_APPKEY"
+            android:value="3285667bc5f714a2-00-vyfqo1" />
+
+        <!-- 渠道统计 -->
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="sfht" />
+        <meta-data
+            android:name="com.growingio.android.GConfig.Channel"
+            android:value="sfht" />
+
+        <meta-data
+            android:name="API_HOST"
+            android:value="www.fengqu.com" />
+        <meta-data
+            android:name="IMG_HOST"
+            android:value="img0.fengqucdn.com" />
+        <meta-data
+            android:name="DEBUG"
+            android:value="true" />
+        <meta-data
+            android:name="APP_ID"
+            android:value="5" />
+        <meta-data
+            android:name="H5_VERSION"
+            android:value="2.7.0" />
+
+
+        <!--&lt;!&ndash; 测试展示界面 &ndash;&gt;-->
+        <!--<activity-->
+        <!--android:name=".app.modules.test.TestActivity"-->
+        <!--android:screenOrientation="portrait"-->
+        <!--android:theme="@style/NormalAppTheme" />-->
+    </application>
+</manifest>

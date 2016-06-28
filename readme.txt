@@ -1,6 +1,14 @@
 ******view-component
 
-
+******页面拆分和组装
++ 头部：topbar
++ 底部：tab
++ 中间页面：
+    + actiity:
+    + adapterfragment:
+    + fragment:basefragment,interface,
+    + dialog:
+    + windowmanager:
 ******线程：同步异步
 
 ******crosswalkview
