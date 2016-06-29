@@ -13,14 +13,6 @@ import com.flower.common.SFApplication;
 import java.util.HashSet;
 import java.util.Set;
 
-
-/**
- * 文件名：HTApplication.java
- * 版权：(C)版权所有2015-2015顺丰国际电商
- * 描述：
- * 修改人：RWJ
- * 修改时间：2015/3/23 10:49
- */
 public class HTApplication extends SFApplication {
     //    public static String appVersionToUpgrade = "";
     private static boolean TuHasInit = false;

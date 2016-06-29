@@ -68,61 +68,16 @@
         <!--android:screenOrientation="portrait"-->
         <!--android:theme="@style/NormalAppTheme" />-->
         <!--<activity-->
-            <!--android:name=".app.base.NativeActivity"-->
-            <!--android:configChanges="keyboardHidden|orientation|screenSize"-->
-            <!--android:hardwareAccelerated="true"-->
-            <!--android:screenOrientation="portrait"-->
-            <!--android:theme="@style/NormalAppTheme" />-->
+        <!--android:name=".app.base.NativeActivity"-->
+        <!--android:configChanges="keyboardHidden|orientation|screenSize"-->
+        <!--android:hardwareAccelerated="true"-->
+        <!--android:screenOrientation="portrait"-->
+        <!--android:theme="@style/NormalAppTheme" />-->
 
         <!-- glide 图片加载模式需要-->
         <meta-data
             android:name="com.sfht.common.utils.ARGB888GlideModule"
             android:value="GlideModule" />
-
-
-        <!-- 风控 您的合作方标识 -->
-        <meta-data
-            android:name="PARTNER_CODE"
-            android:value="sfht" />
-        <meta-data
-            android:name="com.amap.api.v2.apikey"
-            android:value="1d9ae65023c1a37573756a436dee2c84" />
-        <meta-data
-            android:name="JPUSH_CHANNEL"
-            android:value="developer-default" />
-        <meta-data
-            android:name="JPUSH_APPKEY"
-            android:value="539687da0434cb62b45e1bd6" />
-        <meta-data
-            android:name="UMENG_APPKEY"
-            android:value="551defaffd98c5c7920009bf" />
-        <meta-data
-            android:name="TUSDK_APPKEY"
-            android:value="3285667bc5f714a2-00-vyfqo1" />
-
-        <!-- 渠道统计 -->
-        <meta-data
-            android:name="UMENG_CHANNEL"
-            android:value="sfht" />
-        <meta-data
-            android:name="com.growingio.android.GConfig.Channel"
-            android:value="sfht" />
-
-        <meta-data
-            android:name="API_HOST"
-            android:value="www.fengqu.com" />
-        <meta-data
-            android:name="IMG_HOST"
-            android:value="img0.fengqucdn.com" />
-        <meta-data
-            android:name="DEBUG"
-            android:value="true" />
-        <meta-data
-            android:name="APP_ID"
-            android:value="5" />
-        <meta-data
-            android:name="H5_VERSION"
-            android:value="2.7.0" />
 
 
         <!--&lt;!&ndash; 测试展示界面 &ndash;&gt;-->
